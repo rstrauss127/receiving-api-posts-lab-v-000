@@ -1747,3 +1747,23 @@ Processing by ProductsController#new as HTML
 Completed 200 OK in 1344ms (Views: 1342.2ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/products" for 68.174.146.0 at 2019-07-01 18:51:27 +0000
+Cannot render console from 68.174.146.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n2Ipp4AmPb2oV/nyulEi/fZKktcuZm70we0hmk7fyMuuTYFLeEjVnAMrLy9MxFfcnEja4Q7F+xUz0pLGpMatbA==", "product"=>{"name"=>"New product", "price"=>"40", "description"=>"fdagafdgadg", "inventory"=>"20"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "price", "created_at", "updated_at", "inventory", "description") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "New product"], ["price", 40], ["created_at", "2019-07-01 18:51:27.428953"], ["updated_at", "2019-07-01 18:51:27.428953"], ["inventory", 20], ["description", "fdagafdgadg"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://67.205.152.27:54972/products
+Completed 200 OK in 9ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/products" for 68.174.146.0 at 2019-07-01 18:51:27 +0000
+Cannot render console from 68.174.146.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
