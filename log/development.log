@@ -1743,3 +1743,7 @@ Started GET "/products/new" for 68.174.146.0 at 2019-07-01 18:51:12 +0000
 Cannot render console from 68.174.146.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by ProductsController#new as HTML
   Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (1325.2ms)
+Completed 200 OK in 1344ms (Views: 1342.2ms | ActiveRecord: 0.0ms)
+
+
